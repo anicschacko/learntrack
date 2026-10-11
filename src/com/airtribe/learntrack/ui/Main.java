@@ -20,33 +20,32 @@ public class Main  {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello, World!");
-//        InitServiceClasses();
-//
-//        scanner = new Scanner(System.in);
-//        int choice = -1;
-//        do {
-//            choice = ShowMainMenu();
-//            try {
-//                switch (choice) {
-//                    case 1:
-//                        studentServiceUI.ShowMainMenu();
-//                        break;
-//                    case 2:
-//                        courseServiceUI.ShowMainMenu();
-//                        break;
-//                    case 3:
-//                        enrollmentServiceUI.ShowMainMenu();
-//                        break;
-//                    case 0:
-//                        println("Thank you for using LearnTrack Portal!!");
-//                        break;
-//
-//                }
-//            } catch (Exception e) {
-//                println("Error : " + e.getMessage());
-//            }
-//        } while(choice != 0);
+        InitServiceClasses();
+
+        scanner = new Scanner(System.in);
+        int choice = -1;
+        do {
+            choice = ShowMainMenu();
+            try {
+                switch (choice) {
+                    case 1:
+                        studentServiceUI.ShowMainMenu();
+                        break;
+                    case 2:
+                        courseServiceUI.ShowMainMenu();
+                        break;
+                    case 3:
+                        enrollmentServiceUI.ShowMainMenu();
+                        break;
+                    case 0:
+                        println("Thank you for using LearnTrack Portal!!");
+                        break;
+
+                }
+            } catch (Exception e) {
+                println("Error : " + e.getMessage());
+            }
+        } while(choice != 0);
     }
 
     private static void InitServiceClasses() {
